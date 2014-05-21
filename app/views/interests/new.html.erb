@@ -1,8 +1,12 @@
-<script text="text/javascript">
-var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg'];
-$('html').css({'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
+
+<script type="text/javascript">
+   $(function() {
+    var images = ['/image01.jpg', '/image02.jpg', '/image03.jpg', '/image04.jpg', '/image05.jpg'];
+    $('#background').css({'background-image': 'url(/assets' + images[Math.floor(Math.random() * images.length)] + ')'});
+   });
 </script>
-<body id="bg">
+<div id="background"></div>
 
 <h1 class="title">CANNABIS GRAND CRU!</h1>
 <h1>ASPEN, CO</h1>
@@ -24,3 +28,5 @@ $('html').css({'background-image': 'url(images/' + images[Math.floor(Math.random
     </strong>
     <% end %>
 </div>
+
+
