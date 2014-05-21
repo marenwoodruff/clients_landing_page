@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.3'
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'rails_12factor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
