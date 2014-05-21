@@ -5,12 +5,12 @@ class User
   field :email, type: String
   field :password_digest, type: String
 
-  # validates :username, presence: true, length: { maximum: 30 },
-  #                       uniqueness: true
-  # validates :email, presence: true, 
-  #                   uniqueness: true
+  validates :username, presence: true, length: { maximum: 30 },
+                        uniqueness: true
+  validates :email, presence: true, 
+                    uniqueness: true
 
-  # validates :password_digest, length: { minimum: 6 }, :on => :create
+  validates :password_digest, length: { minimum: 6 }, :on => :create
 
   
 
