@@ -1,0 +1,33 @@
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:700|Alegreya:700|IM+Fell+Double+Pica+SC);
+body {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Alike Angular', serif;
+}
+
+#bg {
+    background-attachment:fixed; 
+    background-repeat: no-repeat; 
+    background-image: url(weed_shades.jpg);
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 55px;
+}
+
+body.authorized {
+    background-repeat: no-repeat; 
+    background-image: url(no_entry.jpg);
+    background-position: top center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.name {
+    padding-right: 10px;
+    padding-top: 15px;
+}

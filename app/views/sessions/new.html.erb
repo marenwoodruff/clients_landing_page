@@ -1,0 +1,30 @@
+<%= render partial: '/layouts/navbar' %>
+<body class="authorized">
+<h1>AUTHORIZED USERS ONLY</h1>
+
+<br />
+
+<%= form_for :session, :url => sessions_path do |f| %>
+  
+  <fieldset>
+    <%= f.text_field :username, :placeholder => "Username"  %> 
+  </fieldset>
+
+  <br />
+  
+  <fieldset>
+    <%= f.text_field :email, :placeholder => "Email"  %>
+  </fieldset>
+
+  <br />
+
+  </fieldset>
+    <%= f.password_field :password, :placeholder => "Password"  %> 
+  </fieldset>
+
+  <br /><br />
+
+  <%= f.submit "Login" %>
+<% end %>
+
+

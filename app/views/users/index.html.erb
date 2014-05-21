@@ -1,0 +1,10 @@
+<%= render partial: '/layouts/navbar' %>
+<h2>
+    <u>Hi, <%= current_user ? current_user.username : "(logged in)" %> </u>
+</h2>
+
+
+<%= link_to 'Go to Index Page', interests_path %>
+
+<br /><br /><br />
+<%= button_to "Log out", new_session_path, method: :delete, class: 'logOutBtn' %>

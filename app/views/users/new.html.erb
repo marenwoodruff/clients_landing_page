@@ -1,0 +1,29 @@
+<%= render partial: '/layouts/navbar' %>
+<body class="authorized">
+<h1>ONLY FOR NEW ADMINISTRATORS</h1>
+
+<br />
+<div>
+    <%= form_for @user do |i| %>
+        <fieldset>
+            <%= i.text_field :username, :placeholder => "Enter a Username" %>
+        </fieldset>
+        
+        <br />
+
+        <fieldset>
+            <%= i.text_field :email, :placeholder => "Enter an email" %>
+        </fieldset>
+        
+        <br />
+
+        <fieldset>
+            <%= i.password_field :password, :placeholder => "Enter a Password" %>
+        </fieldset>
+        
+        <br />
+        
+        <%= i.submit "SUBMIT", :class => "btn btn-large default"  %>
+
+    <% end %>
+</div>
